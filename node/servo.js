@@ -50,6 +50,7 @@ function setAngle() {
 
 var EventHubClient = require('azure-event-hubs').Client;
 var connectionString = 'HostName=twintest.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=aH23urz+48JHl0JQuNOxcnJAU76bY23fyZs6eR6p+SE=';
+//var connectionString = 'HostName=iotkithandson.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=1CB3UjpoNLLoxc8MAg7CsGfXAdU4bw0lRp0Zhlz0r+w=';
 
 var printError = function (err) {
   console.log(err.message);

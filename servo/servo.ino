@@ -64,7 +64,7 @@ void readSerial() {
 void loop() {
     //USE_SERIAL.println("start");
     readSerial();
-    /*int BUTTONState = digitalRead(BUTTON);
+    int BUTTONState = digitalRead(BUTTON);
     //USE_SERIAL.println(BUTTONState);
     if (BUTTONState == LOW) {                 // ボタンが押されたら
         digitalWrite(LED, LOW);
@@ -77,7 +77,7 @@ void loop() {
             }
             delay(5);
         }
-    }*/
+    }
     if (g_emergency) {
         myservo.write(180);
         int flag = millis() & 0x40;
